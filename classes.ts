@@ -7,6 +7,16 @@ class Vehicle {
   }
 }
 
+class Car extends Vehicle {
+  drive(): void {
+    console.log("Vroom");
+  }
+}
+
 const vehicle = new Vehicle();
 vehicle.drive();
 vehicle.honk();
+
+const car2 = new Car();
+car2.drive();
+car2.honk();
