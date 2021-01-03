@@ -1,4 +1,4 @@
-let apples: number = 5;
+let apples = 5;
 
 let speed:string = 'fast';
 
@@ -30,5 +30,9 @@ let point: { x: number; y: number} = {
     y: 20
 }
 
+// Function
+const logNumber: (i: number) => void = (i: number) => {
+    console.log(i)
+}
 
 
