@@ -9,23 +9,25 @@ class Vehicle {
   }
 }
 
-// class Car extends Vehicle {
-//   private drive(): void {
-//     console.log("Vroom");
-//   }
+class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+  private drive(): void {
+    console.log("Vroom");
+  }
 
-//   startDrivingProcess(): void {
-//     this.drive;
-//     this.honk();
-//   }
-// }
+  startDrivingProcess(): void {
+    this.drive;
+    this.honk();
+  }
+}
 
 const vehicle = new Vehicle("orange");
 // vehicle.drive();
 // vehicle.honk();
 console.log(vehicle.color);
 
-// const car2 = new Car();
-// car2.drive();
-// car2.startDrivingProcess();
-// car2.honk();
+const car2 = new Car(4, "red");
+
+car2.startDrivingProcess();
